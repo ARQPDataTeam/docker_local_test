@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output
 from plotly.subplots import make_subplots
 
 # initialize the dash app as 'app'
-app = Dash(__name__)
+app = Dash(__name__, requests_pathname_prefix='/app/DW1/',routes_pathname_prefix='/app/DW1/')
 
 # create the dataframe from some fake data
 datetime=pd.date_range('2024-01-01', periods=1e5, freq='min') # datetime range
